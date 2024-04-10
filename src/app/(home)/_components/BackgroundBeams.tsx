@@ -3,12 +3,10 @@ import emailjs from '@emailjs/browser';
 import React, { useRef, useState } from 'react';
 import { toast } from 'sonner';
 
+import { serviceId, templateId, userId } from '@/services/email';
 import { BackgroundBeams } from '@/src/components/ui/background-beams';
 import { socialMediaLinks } from '@/utils/helpers/socialMediaLinks';
 
-const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID || '';
-const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID || '';
-const userId = process.env.NEXT_PUBLIC_USER_ID || '';
 export function BackgroundBeamsDemo() {
   const form = useRef<HTMLFormElement>(null);
   const [isLoading, setIsLoading] = useState(false);
@@ -36,7 +34,10 @@ export function BackgroundBeamsDemo() {
     }
   };
   return (
-    <div className="h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased">
+    <div
+      id="contact"
+      className="h-[40rem] w-full rounded-md bg-neutral-950 relative flex flex-col items-center justify-center antialiased"
+    >
       <BackgroundBeams />
       <div className="max-w-2xl mx-auto p-4 relative z-10">
         <h1 className="text-lg md:text-7xl bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600 text-center font-sans font-bold">

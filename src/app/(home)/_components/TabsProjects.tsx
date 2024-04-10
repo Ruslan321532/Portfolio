@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 import { Tabs } from '@/src/components/ui/tabs';
 
-export function TabsDemo() {
+export function TabsProjects() {
   const tabs = [
     {
       title: 'Trello Clone',
@@ -49,7 +49,7 @@ export function TabsDemo() {
   ];
 
   return (
-    <div className="h-[30rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40 gap-10">
+    <div id='projects' className="h-[30rem] md:h-[40rem] [perspective:1000px] relative b flex flex-col max-w-5xl mx-auto w-full  items-start justify-start my-40 gap-10">
       <h2 className="font-bold text-4xl text-white">Best Project</h2>
       <Tabs tabs={tabs} />
     </div>

@@ -4,6 +4,7 @@ import { FloatingNavBar } from './_components/FloatingNavBar';
 import { SpotlightPreview } from './_components/Preview';
 import { StickyScrollAboutMe } from './_components/StickyScrollAboutMe';
 import { TabsProjects } from './_components/TabsProjects';
+import { TracingExperiance } from './_components/TracingExperiance';
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       <SpotlightPreview />
       <TabsProjects />
       <BentoGridDemo />
+      <TracingExperiance />
       <StickyScrollAboutMe />
       <BackgroundContactsMe />
     </div>

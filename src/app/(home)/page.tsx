@@ -1,7 +1,8 @@
-import { BackgroundBeamsDemo } from './_components/BackgroundBeams';
+import { BackgroundContactsMe } from './_components/BackgroundContactsMe';
 import { BentoGridDemo } from './_components/BentoGridThird';
 import { FloatingNavBar } from './_components/FloatingNavBar';
 import { SpotlightPreview } from './_components/Preview';
+import { StickyScrollAboutMe } from './_components/StickyScrollAboutMe';
 import { TabsProjects } from './_components/TabsProjects';
 
 export default function Home() {
@@ -11,7 +12,8 @@ export default function Home() {
       <SpotlightPreview />
       <TabsProjects />
       <BentoGridDemo />
-      <BackgroundBeamsDemo />
+      <StickyScrollAboutMe />
+      <BackgroundContactsMe />
     </div>
   );
 }

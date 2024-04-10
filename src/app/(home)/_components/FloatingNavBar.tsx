@@ -1,4 +1,4 @@
-'use client'
+'use client';
 import { IconHome, IconMessage, IconUser } from '@tabler/icons-react';
 import { Prompt } from 'tabler-icons-react';
 

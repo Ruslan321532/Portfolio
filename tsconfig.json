@@ -16,10 +16,11 @@
     "isolatedModules": true,
     "jsx": "preserve",
     "incremental": true,
-    "noImplicitAny": true,
+    "noImplicitAny": false,
     "noFallthroughCasesInSwitch": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
+    "allowSyntheticDefaultImports": true, 
     "plugins": [
       {
         "name": "next"

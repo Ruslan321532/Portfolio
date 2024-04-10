@@ -1,5 +1,6 @@
 'use client';
 import emailjs from '@emailjs/browser';
+import { IconSend } from '@tabler/icons-react';
 import React, { useRef, useState } from 'react';
 import { toast } from 'sonner';
 
@@ -88,9 +89,14 @@ export function BackgroundContactsMe() {
           />
           <button
             disabled={isLoading}
-            className="bg-purple-800 text-white py-3 px-6 rounded-lg font-bold text-lg mt-8 hover:bg-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition duration-300"
+            className="bg-purple-800 text-white py-3 px-6 rounded-lg font-bold text-lg mt-8 hover:bg-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition duration-300 flex items-center justify-between" // Добавляем стили для выравнивания содержимого по центру
           >
-            {isLoading ? 'Loading' : 'Submit'}
+            <span className="flex items-center">
+              {isLoading ? 'Loading' : 'Send'}
+            </span>
+            <span>
+              <IconSend className="ml-2" />
+            </span>
           </button>
         </form>
         <div className="flex justify-center mt-6 space-x-4">

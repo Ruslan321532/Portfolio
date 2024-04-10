@@ -38,3 +38,18 @@ body {
 .no-visible-scrollbar::-webkit-scrollbar {
   display: none;
 }
+
+div::-webkit-scrollbar,
+::-webkit-scrollbar {
+  width: 1px;
+}
+
+div::-webkit-scrollbar-track,
+::-webkit-scrollbar-track {
+  background: #333;
+}
+
+div::-webkit-scrollbar-thumb,
+::-webkit-scrollbar-thumb {
+  background: #666;
+}

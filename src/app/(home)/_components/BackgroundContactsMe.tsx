@@ -1,6 +1,7 @@
 'use client';
 import emailjs from '@emailjs/browser';
 import { IconSend } from '@tabler/icons-react';
+import { motion } from 'framer-motion';
 import React, { useRef, useState } from 'react';
 import { toast } from 'sonner';
 
@@ -24,6 +25,11 @@ export function BackgroundContactsMe() {
         () => {
           toast.success('sucsess');
           setIsLoading(false);
+          if (!form.current) {
+            return;
+          } else {
+            form.current.reset();
+          }
         },
         error => {
           console.log(error.text);
@@ -59,6 +65,7 @@ export function BackgroundContactsMe() {
             type="text"
             name="name"
             id="name"
+            required
             placeholder="example@gmail.com"
             className="rounded-lg border p-2.5 border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
           />
@@ -72,6 +79,7 @@ export function BackgroundContactsMe() {
             type="email"
             name="email"
             id="email"
+            required
             placeholder="example@gmail.com"
             className="rounded-lg border p-2.5 border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
           />
@@ -84,6 +92,7 @@ export function BackgroundContactsMe() {
           <textarea
             name="message"
             id="message"
+            required
             placeholder="example@gmail.com"
             className="rounded-lg border p-2.5 border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
           />
@@ -108,9 +117,20 @@ export function BackgroundContactsMe() {
               rel="noopener noreferrer"
               className="cursor-pointer"
             >
-              <div className="w-8 h-8" style={{ zIndex: 999 }}>
-                {link.icon}
-              </div>
+              <motion.div
+                whileHover={{
+                  scale: 1.2,
+                  rotate: 5,
+                  boxShadow: '0px 0px 10px rgba(0, 0, 0, 0.2)',
+                  color: '#7025BD',
+                }}
+                whileTap={{ scale: 0.9 }}
+                transition={{ duration: 0.2 }}
+              >
+                <div className="w-12 h-12" style={{ zIndex: 999 }}>
+                  {link.icon}
+                </div>
+              </motion.div>
             </a>
           ))}
         </div>

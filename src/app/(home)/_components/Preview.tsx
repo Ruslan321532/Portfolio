@@ -16,8 +16,8 @@ export function SpotlightPreview() {
         </h1>
         <p className="mt-4 font-normal text-base text-neutral-300 max-w-lg text-center mx-auto">
           Skilled in Tailwind, ReactJS, NextJS, TypeScript, React Query,
-          Shadcn-UI, Tailwind, focused on responsive, dynamic web development
-          with efficient code and state management.
+          Shadcn-UI,focused on responsive, dynamic web development with
+          efficient code and state management.
         </p>
         {/* <TextGenerateEffect words={words} /> */}
       </div>

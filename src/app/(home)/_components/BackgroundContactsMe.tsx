@@ -89,7 +89,7 @@ export function BackgroundContactsMe() {
           />
           <button
             disabled={isLoading}
-            className="bg-purple-800 text-white py-3 px-6 rounded-lg font-bold text-lg mt-8 hover:bg-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition duration-300 flex items-center justify-between" // Добавляем стили для выравнивания содержимого по центру
+            className="bg-neutral-950 text-white py-3 px-6 rounded-lg font-bold text-lg mt-8 hover:bg-purple-900 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 transition duration-300 flex items-center justify-between hover:shadow-lg transform hover:scale-105 mb-2" // Добавляем стили для выравнивания содержимого по центру
           >
             <span className="flex items-center">
               {isLoading ? 'Loading' : 'Send'}

@@ -15,6 +15,25 @@ export const metadata: Metadata = {
     template: `%s | ${siteConf.name}`,
   },
   description: siteConf.description,
+  icons: [
+    {
+      url: '/one.jpg',
+      href: '/favicon/favicoLove.svg',
+    },
+  ],
+  authors: [
+    {
+      name: siteConf.name,
+    },
+  ],
+  robots: {
+    index: true,
+    follow: true,
+  },
+  creator: siteConf.creator,
+  publisher: siteConf.publisher,
+  referrer: 'origin',
+  applicationName: siteConf.applicationName,
 };
 
 export default function RootLayout({

@@ -30,6 +30,7 @@ export const FloatingNav = ({
   const { scrollYProgress } = useScroll();
 
   const [visible, setVisible] = useState(false);
+  const [language, setLanguage] = useState('eng');
 
   useMotionValueEvent(scrollYProgress, 'change', current => {
     // Check if current is not undefined and is a number
@@ -53,6 +54,9 @@ export const FloatingNav = ({
     if (handleClick) {
       handleClick(link);
     }
+  };
+  const toggleLanguage = () => {
+    setLanguage(prevLanguage => (prevLanguage === 'eng' ? 'ru' : 'eng'));
   };
   return (
     <AnimatePresence mode="wait">
@@ -85,10 +89,15 @@ export const FloatingNav = ({
             <span className="hidden sm:block text-sm">{navItem.name}</span>
           </div>
         ))}
-        <button className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full">
-          <span>Login</span>
-          <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent  h-px" />
-        </button>
+        <div className="relative">
+          <button
+            className="border text-sm font-medium relative border-neutral-200 dark:border-white/[0.2] text-black dark:text-white px-4 py-2 rounded-full"
+            onClick={toggleLanguage}
+          >
+            {language === 'eng' ? 'Eng' : 'Рус'}
+            <span className="absolute inset-x-0 w-1/2 mx-auto -bottom-px bg-gradient-to-r from-transparent via-blue-500 to-transparent h-px" />
+          </button>
+        </div>
       </motion.div>
     </AnimatePresence>
   );

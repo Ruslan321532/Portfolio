@@ -16,7 +16,15 @@
   }
 }
 
+/* @font-face {
+  font-family: 'BestermindRegular';
+  src: url('/public/fonts/BestermindRegular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+} */
+
 body {
+  /* font-family: 'BestermindRegular', sans-serif; */
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(to bottom,
       transparent,

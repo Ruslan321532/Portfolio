@@ -35,7 +35,7 @@ export const socialMediaLinks = [
   {
     name: 'Gmail',
     icon: <BrandGmail />,
-    link: 'https://t.me/atlantiS2k',
+    link: 'mailto: ruslanburalkiev8@gmail.com',
     color: '#0088cc',
   },
 ];

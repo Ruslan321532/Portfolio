@@ -66,7 +66,7 @@ export function BackgroundContactsMe() {
             name="name"
             id="name"
             required
-            placeholder="example@gmail.com"
+            placeholder="Rusya"
             className="rounded-lg border p-2.5 border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
           />
           <label
@@ -93,7 +93,7 @@ export function BackgroundContactsMe() {
             name="message"
             id="message"
             required
-            placeholder="example@gmail.com"
+            placeholder="Hi, my name is Rusya"
             className="rounded-lg border p-2.5 border-neutral-800 focus:ring-2 focus:ring-teal-500  w-full relative z-10 mt-4  bg-neutral-950 placeholder:text-neutral-700"
           />
           <button

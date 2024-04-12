@@ -1,6 +1,7 @@
 'use client';
 import {
   BrandGithub,
+  BrandGmail,
   BrandInstagram,
   BrandLinkedin,
   BrandTelegram,
@@ -28,6 +29,12 @@ export const socialMediaLinks = [
   {
     name: 'Telegram',
     icon: <BrandTelegram />,
+    link: 'https://t.me/atlantiS2k',
+    color: '#0088cc',
+  },
+  {
+    name: 'Gmail',
+    icon: <BrandGmail />,
     link: 'https://t.me/atlantiS2k',
     color: '#0088cc',
   },

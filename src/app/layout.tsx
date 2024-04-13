@@ -5,8 +5,8 @@ import { Inter } from 'next/font/google';
 import { Toaster } from 'sonner';
 
 import { siteConf } from '@/config/sites';
+import YandexMetricaScript from '@/script/yandexMetrics';
 import { cn } from '@/utils/cn';
-
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
@@ -44,6 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.className, 'bg-black text-white')}>
+        <YandexMetricaScript />
         <Toaster position="top-center" />
         {children}
       </body>

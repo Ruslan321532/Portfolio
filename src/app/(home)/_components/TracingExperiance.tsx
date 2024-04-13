@@ -15,9 +15,7 @@ export function TracingExperiance() {
             <h2 className="bg-black text-white rounded-full text-sm w-fit px-4 py-1 mb-4">
               {item.company}
             </h2>
-
             <p className="text-xl mb-4">{item.position}</p>
-
             <div className="text-sm prose prose-sm dark:prose-invert">
               {item.image && (
                 <Image

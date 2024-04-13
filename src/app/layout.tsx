@@ -17,8 +17,8 @@ export const metadata: Metadata = {
   description: siteConf.description,
   icons: [
     {
-      url: '/one.jpg',
-      href: '/favicon/favicoLove.svg',
+      url: '/',
+      href: '/favicon/favicon-love.svg',
     },
   ],
   authors: [

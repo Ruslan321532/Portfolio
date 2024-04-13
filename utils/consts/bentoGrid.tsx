@@ -20,6 +20,8 @@ export const itemsBentoGrid = [
       />
     ),
     icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+    technologiesUsed:
+      'Next.js · TypeScript · ReactJS · JavaScript · Python · Flask ·',
   },
   {
     title: 'Movix Tv',
@@ -34,6 +36,8 @@ export const itemsBentoGrid = [
       />
     ),
     icon: <IconFileBroken className="h-4 w-4 text-neutral-500" />,
+    technologiesUsed:
+      'Next.js · TypeScript · ReactJS · JavaScript · Python · Flask ·',
   },
   {
     title: 'Portfolio',
@@ -48,5 +52,7 @@ export const itemsBentoGrid = [
       />
     ),
     icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
+    technologiesUsed:
+      'Next.js · TypeScript · ReactJS · JavaScript · Python · Flask ·',
   },
 ];

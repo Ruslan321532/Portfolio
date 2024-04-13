@@ -19,7 +19,6 @@ export function SpotlightPreview() {
           Shadcn-UI,focused on responsive, dynamic web development with
           efficient code and state management.
         </p>
-        {/* <TextGenerateEffect words={words} /> */}
       </div>
     </div>
   );
